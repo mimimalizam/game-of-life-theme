@@ -1,1 +1,15 @@
-{{ content }}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+  <body>
+  <div class="header flex">
+  <div class="wrapper">
+  <div class="content">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+  <script src="{{ site.url }}/assets/game_of_life.js"></script>
+</html>

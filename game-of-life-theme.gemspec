@@ -1,7 +1,7 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "game-of-life"
+  spec.name          = "game-of-life-theme"
   spec.version       = "0.1.0"
   spec.authors       = ["Milana"]
   spec.email         = ["milana.stojadinov@gmail.com"]

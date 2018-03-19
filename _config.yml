@@ -38,9 +38,10 @@ minima:
 #header_pages:
 # - about.html
 
+permalink: /:categories/:title/
+
 # Build settings
 markdown: kramdown
-theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock

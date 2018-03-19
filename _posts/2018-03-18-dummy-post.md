@@ -1,48 +1,55 @@
 ---
 layout: post
-title: "Dummy post"
-date: 2012-05-22
-excerpt: "A ton of text to test readability."
-tags: [sample post, readability, test]
+title: "💎 gem haskii 👋 🖖 🍒 🍀 🦁 💎"
+date: 2018-03-18
+excerpt: "Simple gem created while exercising TDD in Ruby"
+project: true
+tags: [ruby, cli, tdd, emoji]
 comments: true
 ---
 
-Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial
-Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl,
-90's narwhal commodo bitters pour-over nostrud. Ugh est hashtag in,
-fingerstache adipisicing laboris esse Pinterest shabby chic Portland.
-Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl
-cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia
-aute fixie do plaid post-ironic dolor McSweeney's. Cliche pour-over chambray
-nulla four loko skateboard sapiente hashtag.
+**Haskiii** is a simple CLI built as an exercise on TDD.
 
-Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater
-ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe
-Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out
-sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch
-qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna
-pour-over keffiyeh tousled selfies.
+It is a Ruby gem. If you'd like to take a look at repository, it can be found
+[here](https://github.com/mimimalizam/haskii).
 
-## Cupidatat 90's lo-fi authentic try-hard
+[![Gem Version](https://badge.fury.io/rb/haskii.svg)](https://badge.fury.io/rb/haskii)
+[![Build Status](https://semaphoreci.com/api/v1/mstojadinov/haskii/branches/master/badge.svg)](https://semaphoreci.com/mstojadinov/haskii)
 
-In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry
-Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate
-fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd
-Future ex meggings gentrify single-origin coffee try-hard 90's.
+## Usage
 
-* Sartorial hoodie * Labore viral forage * Tote bag selvage * DIY exercitation
-et id ugh tumblr church-key
+```
+$ gem install haskii
 
-Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct
-trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical.
-Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade
-leggings yr.
+$ haskii bar 2 4 6 8 6 4 2 1 6 5 4 3 2 1
+Your happy bar chart:
 
-Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry
-Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel
-flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex,
-scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts
-minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably
-haven't heard of them eu non, Odd Future Truffaut pug keytar meggings
-McSweeney's Pinterest cred. Etsy literally aute esse, eu bicycle rights qui
-meggings fanny pack. Gentrify leggings pug flannel duis.
+   *
+   *
+  ***   *
+  ***   **
+ *****  ***
+ *****  ****
+******* *****
+**************
+
+$ haskii bar --emoji 🍀  1 1 2 3 5 2
+Your happy bar chart:
+
+    🍀
+    🍀
+   🍀🍀
+  🍀🍀🍀🍀
+🍀🍀🍀🍀🍀🍀
+
+$ haskii bar --emoji 🍒  --output chart.html 2 4 6 8 6 4 2 1 6 5 4 3 2 1
+Your happy bar chart is in "chart.html"
+Terminal still rules :P #igor
+```
+
+While having a great time, I've learned that the following command
+makes an executable.
+
+```
+chmod +x <file-path>
+```

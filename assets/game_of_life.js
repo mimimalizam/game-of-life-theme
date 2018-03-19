@@ -6,7 +6,7 @@ var next;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  w = 10;
+  w = 7;
   columns = floor(width/w);
   rows = floor(height/w);
 
@@ -32,13 +32,13 @@ function randomize_color(){
 }
 
 function draw() {
-  background(255);
+  background(253, 253, 253);
   generate();
   for ( var i = 0; i < columns;i++) {
     for ( var j = 0; j < rows;j++) {
       if ((board[i][j] == 1)) fill(r, g, b);
-      else fill(255);
-      stroke(255);
+      else fill(253, 253, 255);
+      stroke(253, 253, 255);
       rect(i*w, j*w, w-1, w-1);
     }
   }

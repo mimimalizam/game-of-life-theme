@@ -1,0 +1,38 @@
+.yellow-background {
+  background-color: #fff5e6;
+}
+
+.card {
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  padding: 2em;
+  border-radius: 2px;
+  min-width: 600px;
+}
+
+.card:hover {
+  position: relative;
+  top: -5px;
+  left: -5px;
+  box-shadow: 5px 5px 5px #969696;
+}
+
+.content {
+  max-width: 750px;
+  margin: 0 auto;
+  position:relative;
+  padding: 100px 100px;
+  justify-content: center;
+  display: flex;
+}
+
+/**
+ * Figures
+ */
+  figure > img {
+    display: block;
+  }
+
+  figcaption {
+    font-size: $small-font-size;
+  }

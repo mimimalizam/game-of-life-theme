@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "💎 gem haskii 👋 🖖 🍒 🍀 🦁 💎"
+title: "gem haskii"
 date: 2018-03-18
 excerpt: "Simple gem created while exercising TDD in Ruby"
 project: true
@@ -53,3 +53,12 @@ makes an executable.
 ```
 chmod +x <file-path>
 ```
+
+## Image
+
+<figure>
+  <a href="{{ site.baseurl }}/assets/img/2018-03-18-01-haskii.png"><img src="{{ site.baseurl }}/assets/img/2018-03-18-01-haskii.png"></a>
+  <figcaption><a title="Haskii title">Haskii</a>.</figcaption>
+</figure>
+
+# 💎 👋 🖖 🍒 🍀 🦁 💎

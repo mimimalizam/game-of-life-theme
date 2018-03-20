@@ -1,0 +1,40 @@
+.yellow-background {
+  background-color: #fff5e6;
+}
+
+.card {
+  font-family: Fira Sans,sans-serif;
+  font-size: 15px;
+  margin: 10px;
+  padding: 2em;
+  border-radius: 2px;
+}
+
+.card:hover {
+  position: relative;
+  top: -5px;
+  left: -5px;
+  box-shadow: 5px 5px 5px #969696;
+}
+
+.content {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
+  text-align: justify;
+  @media #{$small} {
+    padding: 0 .5em;
+  }
+}
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}

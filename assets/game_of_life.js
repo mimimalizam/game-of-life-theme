@@ -11,7 +11,7 @@ function setup() {
 
   randomize_colors();
   board = new Board(columns, rows);
-  board.fill();
+  board.fill(0, columns, 0, 30);
   next = new Board(columns, rows);
   next.empty();
 }
@@ -39,21 +39,32 @@ function generate(){
   next = temp;
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+function mousePressed() {
+    randomize_colors();
+}
+
+function keyPressed(){
+  board.fill(0, columns, 0, 30);
+}
+
+function keyPressed(){
+  if (keyCode === ESCAPE){
+    hide_game_of_life();
+  };
+}
+
 function randomize_colors(){
   r = random(255);
   g = random(255);
   b = random(255);
 }
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
-
-function mousePressed() {
-  randomize_colors();
-}
-
-function keyPressed(){
-  randomize_colors();
-  board.fill();
+function hide_game_of_life(){
+  r = 253;
+  g = 253;
+  b = 255;
 }

@@ -60,3 +60,19 @@ License](https://opensource.org/licenses/MIT).
 - suppose that Ruby, Bundler and Jekyll are in place
 - `jekyll new-theme <theme-name>`
 - update `.gemspec` file
+
+## Theme
+
+### Usage
+
+Lines similar to the following will plot a Game of life strip
+
+```js
+board = new Board(columns, rows);
+board.fill(starting_column, ending_column, starting_row, ending_row);
+```
+
+### Functionality
+
+Press ESCAPE key to hide Game of life. It can be restored with a mouse click.
+Other key strokes reset the board.

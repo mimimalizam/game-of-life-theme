@@ -16,14 +16,12 @@ class Board {
       () => Array(this.rows).fill(0));
   }
 
-  fill() {
-    var temp = this.cells.map(function(arr) {
-      return arr.map(function(elem) {
-        return floor(random(2));
-      });
-    });
-
-    this.cells = temp;
+  fill(columns_start, columns_end, rows_start, rows_end) {
+    for (var x = columns_start; x < columns_end; x++) {
+      for (var y = rows_start; y < rows_end; y++) {
+        this.cells[x][y] = floor(random(2));
+      }
+    }
   }
 
   static generate_next(board) {

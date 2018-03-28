@@ -1,13 +1,12 @@
-var w;
-var columns;
-var rows;
-var insert_mode;
-var clear_mode;
+var w, columns, rows;
+var insert_mode, clear_mode;
+var counter;
 let board, next;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   w = 8;
+  counter = 0;
   insert_mode = 0;
   clear_mode = 0;
   columns = floor(width/w);
@@ -21,9 +20,12 @@ function setup() {
 }
 
 function draw() {
-  background(253, 253, 253);
-  draw_board();
-  generate();
+  if (counter % 50 === 0){
+    background(253, 253, 253);
+    draw_board();
+    generate();
+  }
+  counter += 1;
 }
 
 function draw_board(){

@@ -1,11 +1,12 @@
 var w, columns, rows;
-var insert_mode, clear_mode;
+var insert_mode, clear_mode, easter_egg;
 var counter, frequence;
 let board, next;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   w = 8;
+  easter_egg = 0;
   counter = 0; frequence = 50;
   insert_mode = 0; clear_mode = 0;
   columns = floor(width/w);
@@ -13,13 +14,16 @@ function setup() {
 
   randomize_colors();
   board = new Board(columns, rows);
-  board.fill(0, columns, 0, 30);
+  board.fill(0, columns, 0, 3);
   next = new Board(columns, rows);
   next.empty();
+
+  background(253, 253, 253);
+  draw_board();
 }
 
 function draw() {
-  if (counter % frequence === 0){
+  if (counter % frequence === 0 && easter_egg === 1){
     background(253, 253, 253);
     draw_board();
     generate();
@@ -69,16 +73,13 @@ function mousePressed() {
   return false;
 }
 
-function keyPressed(){
-  if (keyCode === ESCAPE) insert_mode = 0;
-}
-
 function keyTyped(){
   if (key ==='e') {
     frequence = 50;
+    easter_egg = 1;
     randomize_colors();
     board.empty();
-    board.fill(0, columns, 0, 30);
+    board.fill(0, columns, rows - 30, rows);
   }
   else if (key === 'q') {
     hide_game_of_life();

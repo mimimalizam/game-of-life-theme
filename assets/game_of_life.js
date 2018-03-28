@@ -1,14 +1,13 @@
 var w, columns, rows;
 var insert_mode, clear_mode;
-var counter;
+var counter, frequence;
 let board, next;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   w = 8;
-  counter = 0;
-  insert_mode = 0;
-  clear_mode = 0;
+  counter = 0; frequence = 50;
+  insert_mode = 0; clear_mode = 0;
   columns = floor(width/w);
   rows = floor(height/w);
 
@@ -20,7 +19,7 @@ function setup() {
 }
 
 function draw() {
-  if (counter % 50 === 0){
+  if (counter % frequence === 0){
     background(253, 253, 253);
     draw_board();
     generate();
@@ -76,14 +75,25 @@ function keyPressed(){
 
 function keyTyped(){
   if (key ==='e') {
+    frequence = 50;
     randomize_colors();
     board.empty();
     board.fill(0, columns, 0, 30);
-  } else if (key === 'q') {
+  }
+  else if (key === 'q') {
     hide_game_of_life();
     clear_mode = 1;
     insert_mode = 0;
-  } else if (key === 'i'){
+  }
+  else if (key === 'k') {
+    insert_mode = 0;
+    frequence = max(5, frequence - 5);
+  }
+  else if (key === 'j') {
+    insert_mode = 0;
+    frequence += 5;
+  }
+  else if (key === 'i'){
     if (clear_mode == 1) insert_mode = 0;
     else {
       clear_mode = 0;

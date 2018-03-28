@@ -23,6 +23,7 @@ game evolves.
   - if you are feeling happy, drag mouse to create some more
 - press `ESC` to --- escape the Insert Mode
 - press `e` to restart the Game
+- use `j` and `k` to control the speed
 - to change the cells' color press any additional key
 
 ToDo:

@@ -2,7 +2,12 @@
 
 Short description and a ToDos (update README)
 
-### Usage
+### Customizing the theme
+
+Among other personal details, font and background color could be changed
+by updating the `_config.yml` file.
+
+#### Change the Game of life strip
 
 Lines similar to the following will plot a Game of life strip
 

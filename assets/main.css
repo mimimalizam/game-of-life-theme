@@ -20,6 +20,26 @@ h1, h2, h4 {
   padding: 20px;
 }
 
+p {
+  padding: 10px;
+}
+
+.index-list{
+  font-size: 25px;
+}
+
+.alnleft {
+  text-align: left;
+}
+
+.alnright {
+  text-align: right;
+}
+
+table {
+  width: 100%;
+}
+
 body {
   vertical-align: middle;
 }

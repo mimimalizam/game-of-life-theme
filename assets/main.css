@@ -24,13 +24,20 @@ p {
   padding: 10px;
 }
 
-.index-list {
-  padding: 0px;
-  font-size: 15px;
+.index-list{
+  font-size: 25px;
 }
 
-.date-left {
+.alnleft {
+  text-align: left;
+}
+
+.alnright {
   text-align: right;
+}
+
+table {
+  width: 100%;
 }
 
 body {

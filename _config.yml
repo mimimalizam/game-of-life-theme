@@ -16,6 +16,9 @@ show_excerpts: false # set to true to show excerpts on the homepage
 permalink: /:categories/:title/
 baseurl: /game-of-life
 
+font: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+background: fff5e6;
+
 # Build settings
 markdown: kramdown
 exclude:

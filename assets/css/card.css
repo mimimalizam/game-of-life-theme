@@ -7,7 +7,7 @@
 
 .card {
   font-family: {{ site.font }}
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   padding: 2em;
   line-height: 1.5;
@@ -17,9 +17,7 @@
 
 .card:hover {
   position: relative;
-  top: -5px;
-  left: -5px;
-  box-shadow: 5px 5px 5px #969696;
+  box-shadow: 2px 2px 2px #969696;
 }
 
 .content {

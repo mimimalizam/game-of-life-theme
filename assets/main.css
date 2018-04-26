@@ -20,6 +20,19 @@ h1, h2, h4 {
   padding: 20px;
 }
 
+p {
+  padding: 10px;
+}
+
+.index-list {
+  padding: 0px;
+  font-size: 15px;
+}
+
+.date-left {
+  text-align: right;
+}
+
 body {
   vertical-align: middle;
 }

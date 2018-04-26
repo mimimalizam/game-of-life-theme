@@ -2,7 +2,7 @@ title: Your awesome title
 author: GitHub User
 email: your-email@domain.com
 
-show_excerpts: false # set to true to show excerpts on the homepage
+show_excerpts: true # set to true to show excerpts on the homepage
 
 permalink: /:categories/:title/
 baseurl: /game-of-life

@@ -12,7 +12,9 @@ However, nice people are still able to observe how initial
 game evolves.
 
 - press `e` to start and/or restart the Game
-- if your eyes are a bit tired and you'd prefer to quietly read a page, type `q`
+- if your eyes are a bit tired and you'd prefer to quietly read a page you can
+ - type `q` to remove cells from the screen
+ - type `p` to pause the Game (use `s` to resume the Game)
 - type `i` to start the Insert Mode where you can create new cells
   - with a click of a mouse new cells will be randomily created around
   - if you are feeling happy, drag mouse to create some more

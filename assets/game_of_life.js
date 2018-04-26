@@ -1,5 +1,5 @@
 var w, columns, rows;
-var insert_mode, clear_mode, easter_egg;
+var insert_mode, clear_mode, easter_egg, pause_mode;
 var counter, frequence;
 let board, next;
 
@@ -8,7 +8,7 @@ function setup() {
   w = 8;
   easter_egg = 0;
   counter = 0; frequence = 50;
-  insert_mode = 0; clear_mode = 0;
+  insert_mode = 0; clear_mode = 0; pause_mode = 0;
   columns = floor(width/w);
   rows = floor(height/w);
 
@@ -43,9 +43,11 @@ function draw_board(){
 }
 
 function generate(){
-  var temp = board;
-  board = Board.generate_next(board);
-  next = temp;
+  if (pause_mode != 1) {
+    var temp = board;
+    board = Board.generate_next(board);
+    next = temp;
+  }
 }
 
 function windowResized() {
@@ -93,6 +95,12 @@ function keyTyped(){
   else if (key === 'j') {
     insert_mode = 0;
     frequence += 5;
+  }
+  else if (key === 's') {
+    pause_mode = 0;
+  }
+  else if (key === 'p') {
+    pause_mode = 1;
   }
   else if (key === 'i'){
     if (clear_mode == 1) insert_mode = 0;

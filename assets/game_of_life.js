@@ -113,6 +113,10 @@ function keyTyped(){
   return false;
 }
 
+function keyPressed(){
+    if (keyCode === ESCAPE) insert_mode = 0;
+}
+
 function touchStarted() {
   touch_count += 1;
   if (touch_count % 2 === 0){

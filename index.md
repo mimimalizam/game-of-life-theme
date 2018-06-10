@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Home
+title: home
 ---
 
 Hi, thanks for the interest in [the Game of life theme](https://github.com/mimimalizam/game-of-life).

@@ -1,5 +1,7 @@
 title: Your awesome title
-author: GitHub User
+author: Your Name # or gh username, for example
+github: your-gh-username
+twitter: your-twitter-handle
 email: your-email@domain.com
 
 show_excerpts: true # set to true to show excerpts on the homepage

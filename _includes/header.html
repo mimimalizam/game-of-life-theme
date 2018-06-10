@@ -1,4 +1,17 @@
 <nav class="header-nav">
-<a href="{{ "/about" | relative_url }}">about</a>
-<a href="{{ "/" |  relative_url }}">home</a>
+  <div>
+    {% if site.github %}
+    <a href="https://github.com/{{ site.github }}">github</a>
+    {% endif  %}
+    {% if site.twitter %}
+      <a href="https://twitter.com/{{ site.twitter }}">twitter</a>
+    {% endif  %}
+    {% if site.email %}
+      <a href="mailto:{{ site.email }}">email me</a>
+    {% endif  %}
+  </div>
+  <div>
+    <a href="{{ "/" |  relative_url }}">home</a>
+    <a href="{{ "/about" | relative_url }}">about</a>
+  </div>
 </nav>

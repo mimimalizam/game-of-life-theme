@@ -11,7 +11,7 @@ layout: default
   {{ content }}
 
   {% if site.posts.size > 0 %}
-  <h3>{{ page.list_title | default: "Posts:" }}</h2>
+  <h3>{{ page.list_title | default: "posts:" }}</h2>
   <ul>
     {% for post in site.posts %}
     <li>

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "game-of-life-theme"
-  spec.version       = "0.5.0"
+  spec.version       = "1.0.0"
   spec.authors       = ["Milana"]
   spec.email         = ["milana.stojadinov@gmail.com"]
 

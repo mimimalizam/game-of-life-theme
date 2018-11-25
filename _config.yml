@@ -7,7 +7,7 @@ email: your-email@domain.com
 show_excerpts: true # set to true to show excerpts on the homepage
 
 permalink: /:categories/:title/
-baseurl: /game-of-life
+baseurl: /game-of-life-theme
 
 font: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
 background: fff5e6;
